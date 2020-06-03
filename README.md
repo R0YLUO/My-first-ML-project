@@ -41,7 +41,10 @@ Now, you can activate the environment by entering the command `conda activate my
 Finally, open jupyter notebook by entering the command `jupyter notebook` and you should be able to run the project locally. 
 
 ## How to use this model to make predictions yourself 
-The model has been trained with the provided Advertising.csv dataset using a linear regression model. If you wish to try it out and predict sales using the model, add the following code to the notebook:  
-`print(predict(<TV-AD-SPENDING>, <RADIO-AD-SPENDING>, <NEWSPAPER-AD-SPENDING>)` 
-and replace `<TV-AD-SPENDING>`, `<RADIO-AD-SPENDING>`, `<NEWSPAPER-AD-SPENDING>` with the monetary values spent on each respective advertising, in thousands of dollars.
-For example, if you enter the code `print(predict(100, 50, 50)`, you are predicting the number of sales of a particular product that you spent $100,000 on TV ads, $50,000 on radio ads, and $50,000 on newspaper ads. The output would be `16.89629275`, meaning the predicted number of sales for that product will be 16,896. 
+The model has been trained with the provided Advertising.csv dataset using a linear regression model. If you wish to try it out and predict sales using the model, follow these instructions: 
+- run all the code first by pressing Cell -> Run All
+- create a new cell by pressing Insert -> Insert Cell Below
+- add the following code `print(predict(<TV-AD-SPENDING>, <RADIO-AD-SPENDING>, <NEWSPAPER-AD-SPENDING>)`
+- replace `<TV-AD-SPENDING>`, `<RADIO-AD-SPENDING>`, `<NEWSPAPER-AD-SPENDING>` with the monetary values spent on each respective advertising, in thousands of dollars.  
+- for example, if you enter the code `print(predict(100, 50, 50)`, you are predicting the number of sales of a particular product that you spent $100,000 on TV ads, $50,000 on radio ads, and $50,000 on newspaper ads.   
+- the output for that example would be `16.89629275`, meaning the predicted number of sales for that product will be 16,896. 
